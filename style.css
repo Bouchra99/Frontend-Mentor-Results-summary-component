@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body{
+    height: 100vh;
+}
+.container{
+    width: 700px;
+    margin: 10px auto;
+    height: 80vh;
+    display: flex;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    box-shadow: 0px 0px 30px -25px;
+}
+
+.title{
+    height: 18%;
+    text-align: center;
+    line-height: 500%;
+    background-color: inherit;
+ 
+    text-justify: center;
+
+}
+
+.results{
+    flex: 1;
+    border-radius: 30px;
+
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%) ) 
+}
+.results-title{
+    color : hsl(241, 100%, 89%);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.circle{
+
+    margin: 0 auto;
+    width : 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: hsla(256, 72%, 46%, 1); */
+    background: linear-gradient(hsla(256, 72%, 46%, 1) ,hsla(241, 72%, 46%, 0)) ;
+}
+.circle h3{
+    color :hsl(0, 0%, 100%);
+    font-size: 70px;
+    font-weight: 800;
+}
+.circle p{
+    color : hsl(241, 100%, 89%);
+    font-size: 15px;
+    line-height: 5px;
+}
+
+.evaluation{
+    /* border: 2px solid red; */
+    margin: 18px 0;
+    text-align: center;
+    color :hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 700;
+}
+.comment{
+    font-size: 16px;
+    font-weight: 500;
+    color : hsl(241, 100%, 89%);
+    text-align: center;
+    width : 70%;
+    margin : 0 auto;
+}
+
+.summary{
+    flex: 1;
+    /* border: 2px solid blue; */
+}
+
+.summary-title{
+    color : hsl(224, 30%, 27%);
+    text-align: left;
+    padding-left: 15px;
+}
+
+.item-list{
+    padding: 0 15px;
+}
+.item{
+    border-radius: 5px;
+    padding: 3px 0;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 10px 0;
+}
+.svg{
+    margin: 0 8px;
+    height: 20px;
+    width: 20px
+}
+.item div{
+    display: flex;
+}
+.item h4{
+    margin-right: 10px;
+}
+
+.item h4 span{
+    color :hsl(241, 100%, 89%)
+}
+.item .val{
+    color : hsl(224, 30%, 27%);
+}
+
+#Reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.091);
+}
+#Memory{
+    color : hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%,0.091);
+}
+#Verbal{
+    color : hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%,0.091);
+
+}
+#Visual{
+    color : hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%,0.091);
+
+}
+.btn{
+   width: 65%;
+   margin: 35px auto;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    color :hsl(0, 0%, 100%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.attribution{
+    /* border:  2px solid red; */
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
