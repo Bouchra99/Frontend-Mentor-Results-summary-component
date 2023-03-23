@@ -50,7 +50,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: hsla(256, 72%, 46%, 1); */
     background: linear-gradient(hsla(256, 72%, 46%, 1) ,hsla(241, 72%, 46%, 0)) ;
 }
 .circle h3{
@@ -65,7 +64,6 @@ body{
 }
 
 .evaluation{
-    /* border: 2px solid red; */
     margin: 18px 0;
     text-align: center;
     color :hsl(0, 0%, 100%);
@@ -83,7 +81,6 @@ body{
 
 .summary{
     flex: 1;
-    /* border: 2px solid blue; */
 }
 
 .summary-title{
@@ -148,7 +145,7 @@ body{
 }
 button{
     width: 100%;
-    height: 40px;
+    height: 45px;
     border: none;
     background-color: hsl(224, 30%, 27%);
     border-radius: 15px;
@@ -160,9 +157,35 @@ button{
 }
 
 .attribution{
-    /* border:  2px solid red; */
     width: 100%;
     text-align: center;
     position: absolute;
     bottom: 10px;
+}
+
+@media (max-width : 400px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+
+    }
+    .results{
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .circle{
+        height: 150px;
+        width: 150px;
+        margin-top: 5px;
+    }
+    .circle h3{
+        font-size: 50px;
+    }
+    
+    .attribution{
+        display: none;
+    }
 }
